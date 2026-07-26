@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>George Crowley</title>
+  
+  <!-- Modern Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #333;
+      background-color: #f8f9fa;
+      padding-top: 70px;
+    }
+    .profile-name {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.2rem;
+      color: #111;
+    }
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .hero-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+    .content-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-bottom: 1.5rem;
+    }
+    .section-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.4rem;
+      border-bottom: 2px solid #0d6efd;
+      display: inline-block;
+      padding-bottom: 4px;
+      margin-bottom: 1rem;
+    }
+    .badge-link {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fixed Top Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand font-monospace" href="#">George Crowley</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+          <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-outline-light btn-sm ms-lg-2 px-3 text-white" href="cv.pdf" target="_blank">CV</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-4">
+    
+    <!-- Top Hero Profile Section -->
+    <div class="hero-card">
+      <div class="row align-items-center">
+        <div class="col-md-3 text-center mb-3 mb-md-0">
+          <img src="gc.JPG" alt="George Crowley" class="profile-img">
+        </div>
+        <div class="col-md-9">
+          <h1 class="profile-name mb-1">George Crowley</h1>
+          <p class="text-primary fw-bold mb-2">PhD Candidate in Electrical & Electronic Engineering</p>
+          <p class="text-muted small mb-2">University of Sheffield • Sir Henry Stephenson Building, England</p>
+          <p class="mb-3">Email: <a href="mailto:gcrowley1@sheffield.ac.uk">gcrowley1@sheffield.ac.uk</a> | FHEA</p>
+          
+          <div class="d-flex flex-wrap gap-2">
+            <a href="https://github.com/George-Crowley" class="btn btn-sm btn-outline-dark badge-link" target="_blank">GitHub</a>
+            <a href="https://gtr.ukri.org/projects?ref=studentship-2764664" class="btn btn-sm btn-outline-primary badge-link" target="_blank">UKRI Project</a>
+            <a href="https://cdtwire.com" class="btn btn-sm btn-outline-secondary badge-link" target="_blank">WIRe CDT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="row">
+      <div class="col-lg-8">
+        
+        <!-- Overview -->
+        <div class="content-card" id="overview">
+          <h2 class="section-title">Overview</h2>
+          <p>I received my BSc in Mathematics from the University of Sussex, England in 2022, and I am currently a PhD student under the primary supervision of <a href="https://www.princeton.edu/~jesnaola/index.html">Dr Iñaki Esnaola</a>.</p>
+          <p>My research project is titled <i>Machine Learning Methods for Monitoring of Complex Water and Sewer Network Infrastructure</i>, sponsored by <a href="https://www.thameswater.co.uk">Thames Water</a> and the <a href="https://cdtwire.com">EPSRC CDT in Water Infrastructure and Resilience</a>.</p>
+          
+          <h6 class="fw-bold mt-3">Collaborators:</h6>
+          <ul class="mb-0">
+            <li><a href="https://esnaolab.github.io">Dr Iñaki Esnaola</a></li>
+            <li><a href="https://www.sheffield.ac.uk/mac/people/civil-academic-staff/simon-tait">Professor Simon Tait</a></li>
+            <li><a href="https://www.sheffield.ac.uk/eee/people/academic-staff/george-panoutsos">Professor George Panoutsos</a></li>
+            <li><a href="https://www.sheffield.ac.uk/mac/people/civil-academic-staff/vanessa-speight">Professor Vanessa Speight</a></li>
+          </ul>
+        </div>
+
+        <!-- Research Interests -->
+        <div class="content-card" id="research">
+          <h2 class="section-title">Research Interests</h2>
+          <p class="mb-0">My research interests lie within probability theory, information theory, numerical solution to ODEs and PDEs, and data science. My current project uses information-theoretic measures as cost functions for optimal sensor placement and machine learning for anomalous event detection in waste networks.</p>
+        </div>
+
+        <!-- Publications -->
+        <div class="content-card" id="publications">
+          <h2 class="section-title">Publications</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item px-0 bg-transparent">
+              <strong>Information-theoretic sensor placement for large sewer networks.</strong><br>
+              <small class="text-muted">Crowley G, Tait S, Panoutsos G, Speight V, Esnaola I. <i>Water Res.</i> 2024.</small><br>
+              <a href="WR_SM.pdf" class="btn btn-sm btn-link p-0 text-decoration-none">Read PDF &rarr;</a>
+            </li>
+            <li class="list-group-item px-0 bg-transparent">
+              <strong>Submodularity of Mutual Information for Multivariate Gaussian Sources with Additive Noise</strong><br>
+              <small class="text-muted">Crowley, G., & Esnaola, I. (2024). arXiv:2409.03541.</small><br>
+              <a href="https://arxiv.org/abs/2409.03541" class="btn btn-sm btn-link p-0 text-decoration-none" target="_blank">View arXiv &rarr;</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Academic Milestones & Visiting Posts -->
+      <div class="col-lg-4">
+        
+        <!-- Visiting Research -->
+        <div class="content-card">
+          <h2 class="section-title">Visiting Student</h2>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2">📍 <a href="https://www.cranfield.ac.uk">Cranfield University</a></li>
+            <li class="mb-2">📍 <a href="https://www.ncl.ac.uk">Newcastle University</a></li>
+            <li class="mb-2">📍 <a href="https://ece.princeton.edu/people/george-crowley">Princeton University</a> - VSRC<br>
+                <small class="text-muted ms-3">April 2026 – October 2026</small>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Teaching -->
+        <div class="content-card" id="teaching">
+          <h2 class="section-title">Teaching</h2>
+          <p class="fw-bold mb-1">University of Sheffield</p>
+          <p class="small text-muted mb-2">Graduate Teaching Assistant (2023 – Present)</p>
+          <ul class="small ps-3 mb-0">
+            <li>AER124 - Analysis & Modelling</li>
+            <li>ACS232 - Signals, Systems & Comms</li>
+            <li>ACS6106 - Cybersecurity for Control</li>
+          </ul>
+        </div>
+
+        <!-- BSc Dissertation -->
+        <div class="content-card">
+          <h2 class="section-title">BSc Dissertation</h2>
+          <p class="small mb-1"><i><a href="Dissertation.pdf">Methods for the Observational Model</a></i></p>
+          <p class="small text-muted mb-0">Supervised by Prof. A. Madzvamuse, Dr. J. Van Yperen, and Dr. E. Campillo-Funollet.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
