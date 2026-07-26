@@ -79,17 +79,30 @@
 
   <div class="container py-4">
     
-    <!-- Top Hero Profile Section -->
+<!-- Top Hero Profile Section -->
     <div class="hero-card">
-      <div class="row align-items-center">
-        <div class="col-md-3 text-center mb-3 mb-md-0">
+      <!-- Added g-4 and g-md-5 to increase horizontal/vertical gap between image and text -->
+      <div class="row align-items-center g-4 g-md-5">
+        
+        <!-- Increased mb-3 to mb-4 for more space when stacked vertically -->
+        <div class="col-md-4 col-lg-3 text-center mb-4 mb-md-0">
           <img src="gc.JPG" alt="George Crowley" class="profile-img">
         </div>
-        <div class="col-md-9">
+        
+        <div class="col-md-8 col-lg-9">
           <h1 class="profile-name mb-1">George Crowley</h1>
           <p class="text-primary fw-bold mb-2">PhD Candidate in Electrical & Electronic Engineering</p>
-          <p class="text-muted small mb-2">University of Sheffield • Sir Henry Stephenson Building, England</p>
-          <p class="text-muted small mb-2">Princeton University • Friend Center for Engineering, USA</p>
+          
+          <div class="small mb-3">
+            <div class="text-secondary fw-semibold">
+              University of Sheffield <span class="text-muted fw-normal">&bull; Sir Henry Stephenson Building, UK</span>
+            </div>
+            <div class="text-muted d-flex align-items-center gap-2 mt-1">
+              <span>Princeton University &bull; Friend Center for Engineering, USA</span>
+              <span class="badge bg-primary-subtle text-primary border border-primary-subtle fw-normal">Visiting Scholar</span>
+            </div>
+          </div>
+
           <p class="mb-3">Email: <a href="mailto:gcrowley1@sheffield.ac.uk">gcrowley1@sheffield.ac.uk</a> | FHEA</p>
           
           <div class="d-flex flex-wrap gap-2">
@@ -98,6 +111,7 @@
             <a href="https://cdtwire.com" class="btn btn-sm btn-outline-secondary badge-link" target="_blank">WIRe CDT</a>
           </div>
         </div>
+
       </div>
     </div>
 
@@ -132,7 +146,7 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item px-0 bg-transparent">
               <strong>Information-theoretic sensor placement for large sewer networks.</strong><br>
-              <small class="text-muted">Crowley G, Tait S, Panoutsos G, Speight V, Esnaola I. <i>Water Res.</i> 2024.</small><br>
+              <small class="text-muted">Crowley G, Tait S, Panoutsos G, Speight V, Esnaola I. <i>Water Research.</i> 2025.</small><br>
               <a href="WR_SM.pdf" class="btn btn-sm btn-link p-0 text-decoration-none">Read PDF &rarr;</a>
             </li>
             <li class="list-group-item px-0 bg-transparent">
@@ -148,16 +162,33 @@
       <!-- Right Column: Academic Milestones & Visiting Posts -->
       <div class="col-lg-4">
         
-        <!-- Visiting Research -->
+        <!-- Visiting Student Card -->
         <div class="content-card">
-          <h2 class="section-title">Visiting Student</h2>
-          <ul class="list-unstyled mb-0">
-            <li class="mb-2">📍 <a href="https://www.cranfield.ac.uk">Cranfield University</a></li>
-            <li class="mb-2">📍 <a href="https://www.ncl.ac.uk">Newcastle University</a></li>
-            <li class="mb-2">📍 <a href="https://ece.princeton.edu/people/george-crowley">Princeton University</a> - VSRC<br>
-                <small class="text-muted ms-3">April 2026 – October 2026</small>
-            </li>
-          </ul>
+        <h2 class="section-title">Visiting Student</h2>
+        <div class="vstack gap-3">
+            
+            <!-- Princeton -->
+            <div class="border-start border-2 border-primary ps-3 py-1">
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="https://ece.princeton.edu/people/george-crowley" class="fw-semibold text-decoration-none text-dark">Princeton University</a>
+                <span class="badge bg-primary-subtle text-primary border border-primary-subtle fw-normal">VSRC</span>
+            </div>
+            <div class="small text-muted mt-1">Apr 2026 – Oct 2026</div>
+            </div>
+
+            <!-- Cranfield -->
+            <div class="border-start border-2 border-secondary-subtle ps-3 py-1">
+            <a href="https://www.cranfield.ac.uk" class="fw-semibold text-decoration-none text-dark">Cranfield University</a>
+            <div class="small text-muted mt-1">Sep 2022 – Jan 2027</div>
+            </div>
+
+            <!-- Newcastle -->
+            <div class="border-start border-2 border-secondary-subtle ps-3 py-1">
+            <a href="https://www.ncl.ac.uk" class="fw-semibold text-decoration-none text-dark">Newcastle University</a>
+            <div class="small text-muted mt-1">Sep 2025 – Jan 2027</div>
+            </div>
+
+        </div>
         </div>
 
         <!-- Teaching -->
