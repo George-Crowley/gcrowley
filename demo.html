@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>George Crowley</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'> 
+  
+  <style>
+    body {
+      padding-bottom: 40px;
+    }
+    .profile-name {
+      font-family: 'Oswald', sans-serif; 
+      font-size: 32px;
+      margin-top: 10px;
+    }
+    .profile-img {
+      max-width: 250px;
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .content-section {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    /* Mobile styling adjustments */
+    @media (max-width: 991px) {
+      .sidebar {
+        margin-bottom: 30px;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand visible-xs" href="#">George Crowley</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#publications">Publications</a></li> 
+          <li><a href="cv.pdf">CV</a></li> 
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+
+      <!-- Profile & Contact Info Sidebar
+           - Loads 1st on Mobile (Top of page)
+           - Pushed to the Right Column (33% width) on Desktop via col-md-push-8
+      -->
+      <div class="col-md-4 col-md-push-8 sidebar">
+        <div class="profile-name">George Crowley</div><br>
+        <img class="img-responsive profile-img" src="gc.JPG" alt="George Crowley Profile Picture"><br>
+        
+        <p><strong>PhD Candidate</strong><br>
+        School of Electrical and Electronic Engineering<br>
+        University of Sheffield<br>
+        Sir Henry Stephenson Building<br>
+        Sheffield, England<br>
+        </p>
+        
+        <p>Email: <a href="mailto:gcrowley1@sheffield.ac.uk">gcrowley1@sheffield.ac.uk</a><br>
+        FHEA</p>
+        <hr>
+        
+        <ul class="list-unstyled">
+          <li><a href="https://github.com/George-Crowley">Github</a></li> 
+          <li><a href="https://gtr.ukri.org/projects?ref=studentship-2764664">UKRI</a></li> 
+          <li><a href="https://cdtwire.com">WIRe CDT (Cohort IV)</a></li> 
+        </ul>
+        <hr>
+        
+        <p><strong>Visiting research student at:</strong></p>
+        <ul>
+          <li><a href="https://www.cranfield.ac.uk">Cranfield University</a></li>
+          <li><a href="https://www.ncl.ac.uk">Newcastle University</a></li>
+          <li><a href="https://ece.princeton.edu/people/george-crowley">Princeton University</a> - VSRC<br><small>(April 2026 - October 1st 2026)</small></li>
+        </ul>
+      </div>
+
+      <!-- Main Content Column 
+           - Loads 2nd on Mobile (Under profile info)
+           - Pulled to the Left Column (66% width) on Desktop via col-md-pull-4
+      -->
+      <div class="col-md-8 col-md-pull-4">
+        
+        <!-- Note: Remember to convert background.HEIC to a background.jpg or background.png file -->
+        <img class="img-responsive thumbnail" src="background.jpg" alt="Background Header Image"><br>
+        
+        <h4 id="Intro"><b>Overview</b></h4>
+        <div class="content-section"> 
+          <p>I received my BSc in Mathematics from the University of Sussex, England in 2022, and I am currently a PhD student under the primary supervision of <a href="https://www.princeton.edu/~jesnaola/index.html">Dr Iñaki Esnaola</a>.</p>
+          <p>My research project is titled <i>Machine Learning Methods for Monitoring of Complex Water and Sewer Network Infrastructure</i>, and is in collaboration with (sponsored by) <a href="https://www.thameswater.co.uk">Thames Water</a> and the <a href="https://cdtwire.com">EPSRC Centre for Doctoral Training in Water Infrastructure and Resilience</a>.</p>
+          
+          <p>Collaborators in this project include:</p>
+          <ul>
+            <li><a href="https://esnaolab.github.io">Dr Iñaki Esnaola</a></li>
+            <li><a href="https://www.sheffield.ac.uk/mac/people/civil-academic-staff/simon-tait">Professor Simon Tait</a></li>
+            <li><a href="https://www.sheffield.ac.uk/eee/people/academic-staff/george-panoutsos">Professor George Panoutsos</a></li>
+            <li><a href="https://www.sheffield.ac.uk/mac/people/civil-academic-staff/vanessa-speight">Professor Vanessa Speight</a></li>
+          </ul>
+        </div>
+        <hr> 
+        
+        <h4 id="research_interests"><b>Research Interests</b></h4>
+        <p>Broadly speaking, my research interests lie within probability theory, information theory, numerical solution to ODEs and PDEs, and data science. My research project involves using information theoretic measures as a cost function for the optimal sensor placement problem and machine learning for anomalous events in waste collection networks.</p>
+        <hr>
+
+        <h4 id="publications"><b>Publications</b></h4>
+        <ul>
+          <li class="paper">Crowley G, Tait S, Panoutsos G, Speight V, Esnaola I. <a href="WR_SM.pdf">Information-theoretic sensor placement for large sewer networks.</a> Water Res. 2024 Nov 4;268(Pt B):122718. doi: 10.1016/j.watres.2024.122718</li><br>
+          <li class="paper">Preprint: Crowley, G., & Esnaola, I. (2024). <a href="https://arxiv.org/abs/2409.03541">Submodularity of Mutual Information for Multivariate Gaussian Sources with Additive Noise</a>. arXiv:2409.03541.</li>
+        </ul>
+        <hr>
+
+        <h4 id="teaching"><b>Teaching Activities</b></h4>
+        <ul>
+          <li><strong>University of Sheffield</strong><br>
+          Graduate Teaching Assistant (GTA), Jan 2023 - Present: 
+            <ul>
+              <li>AER124 - Analysis and Modelling of Aerospace Systems.</li>
+              <li>ACS232 - Signals, Systems and Communications.</li>
+              <li>ACS6106 - Cybersecurity for control systems.</li>    
+            </ul>
+          </li>
+        </ul> 
+        <hr>
+    
+        <h4 id="Bachelors_Dissertation"><b>BSc Dissertation</b></h4>
+        <p>My bachelors dissertation was titled <i><a href="Dissertation.pdf">Methods for the Observational Model</a></i> and was supervised by <a href="https://www.math.ubc.ca/user/3665">Professor Anotida Madzvamuse</a> (University of British Columbia), <a href="https://profiles.sussex.ac.uk/p311115-james-van-yperen">Dr James Van Yperen</a> (University of Sussex) and <a href="https://www.lancaster.ac.uk/maths/people/eduard-campillo-funollet">Dr Eduard Campillo-Funollet</a> (University of Lancaster).</p>
+        <hr>
+
+      </div> 
+
+    </div>
+  </div>
+    
+</body>
+</html>
